@@ -4,3 +4,4 @@ _sass/.sass-cache/*
 .sass-cache/*
 .jekyll-assets-cache
 src/.jekyll-assets-cache
+build/

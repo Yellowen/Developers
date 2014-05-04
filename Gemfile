@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem 'jekyll'
 gem 'jekyll-assets'
 gem 'compass'
-gem 'foundation'
+#gem 'foundation'
 gem 'uglifier'
 
 gem 'rake'
