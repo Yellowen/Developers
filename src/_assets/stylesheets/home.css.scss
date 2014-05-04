@@ -1,0 +1,14 @@
+@import "variables";
+@import "foundation";
+
+
+html {
+   padding: 0;
+   margin: 0;
+   background: $bg;
+}
+
+header {
+   background: $very_light_gray;
+   height: 50em;
+}

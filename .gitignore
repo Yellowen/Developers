@@ -5,3 +5,5 @@ _sass/.sass-cache/*
 .jekyll-assets-cache
 src/.jekyll-assets-cache
 build/
+src/_assets/stylesheets/.sass-cache/
+*/.sass-cache/
