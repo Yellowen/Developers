@@ -1,5 +1,6 @@
 @import "variables";
-@import "foundation";
+@import "compass/css3";
+@import "./foundation";
 
 
 html {
@@ -10,5 +11,6 @@ html {
 
 header {
    background: $very_light_gray;
-   height: 50em;
+   height: $header_height;
+   @include box-shadow(rgba(black, 0.1) 0 -5px 5px inset);
 }
