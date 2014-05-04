@@ -1,0 +1,12 @@
+name: Yellowen Developers
+markdown: redcarpet
+pygments: true
+
+source: ./src
+destination: ./build
+
+assets:
+  js_compressor:  uglifier
+  css_compressor: sass
+  cache: true
+  gzip: [ text/css, application/javascript ]
