@@ -528,8 +528,8 @@
      id="namedview3487"
      showgrid="false"
      inkscape:zoom="0.94839205"
-     inkscape:cx="-33.114093"
-     inkscape:cy="196.21668"
+     inkscape:cx="-165.44333"
+     inkscape:cy="194.10785"
      inkscape:window-x="1280"
      inkscape:window-y="18"
      inkscape:window-maximized="1"
@@ -875,10 +875,10 @@
        style="stop-color:#791C12"
        id="stop3483" /></linearGradient><g
      id="g3196"
-     transform="translate(18.163315,-18.668098)"><polygon
+     transform="matrix(0.9536104,0,0,0.9536104,26.598645,-8.5241723)"><polygon
        transform="matrix(1.835529,0,0,1.835529,0,37.336188)"
        id="polygon3282"
-       points="186.849,187.641 198.13,39.95 153.5,130.41 40.38,197.58 "
+       points="40.38,197.58 186.849,187.641 198.13,39.95 153.5,130.41 "
        clip-rule="evenodd"
        style="fill:url(#linearGradient3216);fill-rule:evenodd" /><polygon
        transform="matrix(1.835529,0,0,1.835529,0,37.336188)"
