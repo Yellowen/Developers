@@ -13,4 +13,11 @@ header {
    background: $very_light_gray;
    height: $header_height;
    @include box-shadow(rgba(black, 0.1) 0 -5px 5px inset);
+
+   .logos {
+      img {
+         width: 5em;
+         heigth: 5em;
+      }
+   }
 }
