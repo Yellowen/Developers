@@ -4,7 +4,8 @@ gem 'jekyll'
 gem 'jekyll-assets'
 gem 'compass'
 gem 'bourbon'
-
+gem 'bitters'
+gem 'neat'
 gem 'uglifier'
 
 gem 'rake'
