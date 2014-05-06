@@ -15,9 +15,12 @@ header {
    @include box-shadow(rgba(black, 0.1) 0 -5px 5px inset);
 
    .logos {
-      img {
-         width: 8em;
-         heigth: 8em;
+      div {
+         background: #3f3f3f;
+         img {
+            width: 8em;
+            heigth: 8em;
+         }
       }
    }
 }

@@ -6,36 +6,10 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width">
 
-    <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="/css/syntax.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/main.css">
     {% stylesheet application %}
     {% javascript application %}
   </head>
   <body>
-    <header>
-      <div class="row">
-        <div class="small-12 columns text-center">
-          <h1 class="logo">Yellowen</h1>
-          <h2>Developers</h2>
-        </div>
-        <div class="logos">
-        {% image ruby.svg %}
-        {% image rails.svg %}
-        {% image python.svg %}
-        {% image js.svg %}
-        {% image debian.svg %}
-        {% image android.svg %}
-        {% image html.svg %}
-        {% image css.svg %}
-        {% image nodejs.svg %}
-
-        </div>
-      </div>
-    </header>
-
     <div class="site">
       <div class="header">
         <h1 class="title"><a href="/">{{ site.name }}</a></h1>
@@ -60,6 +34,6 @@
         </div>
       </div>
     </div>
-
+</script>
   </body>
 </html>
