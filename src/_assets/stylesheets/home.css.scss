@@ -1,7 +1,7 @@
 @import "variables";
-@import "compass/css3";
-@import "./foundation";
-
+@import "lib/bourbon";
+@import "lib/bitters/bitters";
+@import "lib/neat";
 
 html {
    padding: 0;
