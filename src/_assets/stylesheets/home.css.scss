@@ -1,26 +1,12 @@
 @import "variables";
-@import "lib/bourbon";
+@import "lib/bourbon/bourbon";
 @import "lib/bitters/bitters";
-@import "lib/neat";
+@import "lib/neat/neat";
 
-html {
+@import "patterns/hero";
+
+* {
    padding: 0;
    margin: 0;
-   background: $bg;
-}
 
-header {
-   background: $very_light_gray;
-   height: $header_height;
-   @include box-shadow(rgba(black, 0.1) 0 -5px 5px inset);
-
-   .logos {
-      div {
-         background: #3f3f3f;
-         img {
-            width: 8em;
-            heigth: 8em;
-         }
-      }
-   }
 }
