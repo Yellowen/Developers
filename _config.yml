@@ -1,6 +1,6 @@
 name: Yellowen Developers
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 
 source: ./src
 destination: ./build

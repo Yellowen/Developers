@@ -8,45 +8,23 @@
 
     {% stylesheet application %}
     {% javascript application %}
+
   </head>
   <body>
 
-    <div class="hero">
-      <div class="hero-inner">
-        <a href="" class="hero-logo"><img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_1.png" alt=""></a>
-	<div class="hero-copy">
-	  <h1>Short description of Product</h1>
-	  <p>A few reasons why this product is worth using, who is it for and why do they need it.</p>
-	</div>
-        <button>Learn More</button>
-      </div>
+    {% include nav.html %}
+    {% include hero.html %}
+
+    <div class="container">
+        <section class="title center">
+          <h1>We love Free Software</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id nisi erat. Vivamus non purus neque. Donec sit amet fermentum nunc. In hac habitasse platea dictumst. Nulla vulputate auctor velit, eu pulvinar ipsum molestie eu. Nulla sed tincidunt est. Nullam mattis diam sit amet nibh euismod, id venenatis magna pulvinar. Quisque volutpat lacus velit, ultricies vehicula nisi vestibulum ut. Nunc vehicula lobortis vestibulum. Aliquam commodo eros ultricies nisi imperdiet, ac aliquet velit ullamcorper. Vivamus at accumsan magna. Phasellus nec purus tellus. Maecenas hendrerit dolor lorem, vel malesuada erat malesuada non. Mauris eros quam, lacinia eget risus eget, volutpat pharetra enim. Praesent aliquam et nulla non gravida.</p>
+        </section>
     </div>
 
+    {{ content }}
 
-    <div class="site">
-      <div class="header">
-        <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-        <a class="extra" href="/">home</a>
-      </div>
 
-      {{ content }}
-
-      <div class="footer">
-        <div class="contact">
-          <p>
-            Your Name<br />
-            What You Are<br />
-            you@example.com
-          </p>
-        </div>
-        <div class="contact">
-          <p>
-            <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-            <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-          </p>
-        </div>
-      </div>
-    </div>
-</script>
+    {% include footer.html %}
   </body>
 </html>

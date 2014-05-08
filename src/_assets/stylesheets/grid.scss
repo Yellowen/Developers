@@ -1,0 +1,15 @@
+@import "variables";
+@import "lib/bourbon/bourbon";
+@import "lib/neat/neat";
+
+div.container {
+   @include outer-container;
+   section {
+      @include span-columns(12);
+      @include pad(7em 2em 7em 2em);
+
+      &.center {
+         text-align: center;
+      }
+   }
+}

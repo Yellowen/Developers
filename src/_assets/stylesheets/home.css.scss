@@ -3,10 +3,38 @@
 @import "lib/bitters/bitters";
 @import "lib/neat/neat";
 
+@import "grid";
+
 @import "patterns/hero";
+@import "patterns/nav";
+@import "patterns/footer";
+@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("http://fonts.googleapis.com/css?family=Lato");
 
 * {
    padding: 0;
    margin: 0;
+}
 
+h1 {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+}
+p {
+   font-family: 'Lato', sans-serif;
+}
+
+div.container {
+   section {
+      border-bottom: 1px solid $lighter_gray;
+
+      p {
+         @include pad(3em 1em 3em 1em);
+         @include calc(font-size, '20px');
+         line-heigth: 2;
+      }
+      &:last {
+
+      }
+   }
 }
