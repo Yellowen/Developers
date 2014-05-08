@@ -24,17 +24,72 @@ p {
    font-family: 'Lato', sans-serif;
 }
 
-div.container {
-   section {
-      border-bottom: 1px solid $lighter_gray;
+.center {
+   text-align: center;
+}
 
+
+section.step {
+   border-bottom: 1px solid $lighter_gray;
+
+   article {
       p {
-         @include pad(3em 1em 3em 1em);
+         @include pad(1em 1em 3em 1em);
          @include calc(font-size, '20px');
          line-heigth: 2;
       }
-      &:last {
+
+   }
+
+   &:last-of-type {
+      border-bottom: none;
+   }
+   &.bg-orange {
+      border-bottom: 1px solid $light_orange !important;
+   }
+}
+
+div.container {
+   section {
+      border-bottom: 1px solid $very_light_gray;
+
+      p {
+         @include pad(1em 1em 3em 1em);
+         @include calc(font-size, '20px');
+         line-height: 2;
 
       }
+
+      &:last-of-type {
+         border-bottom: none;
+      }
    }
+}
+
+// Background classes
+.bg-lighter-gray {
+   @include background(#{$lighter_gray});
+}
+
+.bg-very-light-gray {
+   @include background(#{$very_light_gray});
+}
+
+.bg-almost-white {
+   @include background(#{$almost_white});
+}
+
+.bg-orange {
+   @include background(#{$light_orange});
+   color: $almost_white;
+}
+
+.bg-green {
+   @include background(#{$green});
+   color: $almost_white;
+}
+
+.bg-orange-gradient {
+   @include radial-gradient($light_orange, $orange);
+   color: $almost_white;
 }
