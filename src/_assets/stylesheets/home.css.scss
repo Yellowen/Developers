@@ -66,30 +66,78 @@ div.container {
    }
 }
 
+.gray-logos {
+   position: relative;
+   overflow: hidden;
+
+   img {
+      width: 5em;
+      height: 5em;
+      opacity: 0.1;
+      position: absolute;
+      margin: 0 auto;
+
+      &#js-logo {
+         top: 30%;
+         right: 10%;
+      }
+
+      &#nodejs-logo {
+         top: 30%;
+         left: 20%;
+      }
+      &#python-logo {
+         top: 50%;
+         left: 40%;
+      }
+      &#ruby-logo {
+         top: 74%;
+         right: 15%;
+      }
+      &#html-logo {
+         top: 85%;
+         left: 25%;
+      }
+      &#css-logo {
+         top: 60%;
+         left: 3%;
+      }
+      &#git-logo {
+         top: 40%;
+         right: 30%;
+      }
+      &#linux-logo {
+         top: 10%;
+         right: 44%;
+      }
+
+   }
+
+}
 // Background classes
-.bg-lighter-gray {
-   @include background(#{$lighter_gray});
-}
+   .bg-lighter-gray {
+      @include background(#{$lighter_gray});
+   }
 
-.bg-very-light-gray {
-   @include background(#{$very_light_gray});
-}
+   .bg-very-light-gray {
+      @include background(#{$very_light_gray});
+   }
 
-.bg-almost-white {
-   @include background(#{$almost_white});
-}
+   .bg-almost-white {
+      @include background(#{$almost_white});
+   }
 
-.bg-orange {
-   @include background(#{$light_orange});
-   color: $almost_white;
-}
+   .bg-orange {
+      @include background(#{$light_orange});
+      color: $almost_white;
+   }
 
-.bg-green {
-   @include background(#{$green});
-   color: $almost_white;
-}
+   .bg-green {
+      @include background(#{$green});
+      color: $almost_white;
+   }
 
-.bg-orange-gradient {
-   @include radial-gradient($light_orange, $orange);
-   color: $almost_white;
-}
+   .bg-orange-gradient {
+      @include radial-gradient($light_orange, $orange);
+      color: $almost_white;
+   }
