@@ -8,7 +8,7 @@
    //desaturate(darken($base-accent-color, 20), 30);
    $hero-color: white;
 
-   background: $hero-background;
+   background: url(asset_path('screen.png'));;
    background-color: $hero-background;
    background-repeat: no-repeat;
    background-position: top;
