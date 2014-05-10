@@ -7,16 +7,25 @@
    background: $footer-background;
    padding: $base-line-height*2 $gutter;
    width: 100%;
+   color: white;
 
-   .footer-logo {
-      text-align: center;
-      margin-bottom: 2em;
+   .logo {
+      @include span-columns(6);
 
-      img {
-         height: 3em;
-      }
    }
 
+   .social {
+      @include span-columns(6);
+      .vertical-menu {
+         list-sytle: none;
+         li {
+            display: inline;
+         }
+
+      }
+      color: white;
+
+   }
    .footer-links {
       @include clearfix;
       margin-bottom: $base-line-height;

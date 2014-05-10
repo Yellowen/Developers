@@ -9,9 +9,11 @@ section.step {
    article {
       @include outer-container;
 
-      div {
+      @include pad(7em 2em 5em 2em);
+
+      &>div {
          @include span-columns(12);
-         @include pad(7em 2em 5em 2em);
+
       }
    }
 }
