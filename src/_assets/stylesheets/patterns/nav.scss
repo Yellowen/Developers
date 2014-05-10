@@ -4,7 +4,7 @@
 @import "../variables";
 
 header.navigation {
-   $navigation-background: $wired_blue;
+   $navigation-background: $awesome_blue;
    $navigation-color: transparentize(white, 0.3);
    $navigation-color-hover: white;
    $navigation-height: 3em;
@@ -20,7 +20,7 @@ header.navigation {
    height: $navigation-height;
    width: 100%;
    z-index: 999;
-   //position: fixed;
+   position: fixed;
    .menu-wrapper {
       @include outer-container;
       position: relative;

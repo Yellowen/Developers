@@ -24,7 +24,7 @@
    .hero-inner {
       @include outer-container;
       @include clearfix;
-      padding: 3em;
+      padding: 7em;
       margin: auto;
       text-align: center;
       color: $hero-color;
