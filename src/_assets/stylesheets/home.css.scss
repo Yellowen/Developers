@@ -31,7 +31,8 @@ p {
 
 section.step {
    border-bottom: 1px solid $lighter_gray;
-
+   color: #40526B;
+      //lighten($dark_gray, 15%);
    article {
       p {
          @include pad(1em 1em 3em 1em);
@@ -46,6 +47,14 @@ section.step {
    }
    &.bg-orange {
       border-bottom: 1px solid $light_orange !important;
+   }
+   &.project {
+      @include pad(60px 0 0px 0);
+      article {
+         p {
+            padding-bottom: 0 !important;
+         }
+      }
    }
 }
 
@@ -80,15 +89,19 @@ div.container {
       &#js-logo {
          top: 30%;
          right: 10%;
+         @include transform(rotate(40deg));
       }
 
       &#nodejs-logo {
          top: 30%;
          left: 20%;
+         @include transform(rotate(-12deg));
       }
       &#python-logo {
          top: 50%;
          left: 40%;
+         width: 6em;
+         height: 6em;
       }
       &#ruby-logo {
          top: 74%;
@@ -97,6 +110,7 @@ div.container {
       &#html-logo {
          top: 85%;
          left: 25%;
+         @include transform(rotate(200deg));
       }
       &#css-logo {
          top: 60%;
@@ -105,14 +119,32 @@ div.container {
       &#git-logo {
          top: 40%;
          right: 30%;
+         @include transform(rotate(15deg));
+
       }
       &#linux-logo {
          top: 10%;
          right: 44%;
+         @include transform(rotate(5deg));
+
       }
 
    }
 
+}
+
+.screenshots {
+   position: relative;
+   padding-bottom: 0 !important;
+   img {
+      width: 70%;
+      height: 39.34%;
+   }
+   .first_screen {
+      position: absolute;
+      margin: 0 auto;
+      bottom: 0;
+   }
 }
 // Background classes
    .bg-lighter-gray {
@@ -129,7 +161,9 @@ div.container {
 
    .bg-orange {
       @include background(#{$light_orange});
-      color: $almost_white;
+      p, h1{
+         color: $almost_white;
+      }
    }
 
    .bg-green {
