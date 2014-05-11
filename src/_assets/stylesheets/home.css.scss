@@ -73,7 +73,14 @@ section.step {
 
    }
    .activity-text {
-
+      .date {
+         color: gray;
+         float: right;
+         background: $almost_white;
+         border-radius: 4px;
+         @include pad(0.3em 0.5em);
+         font-size: 0.8em;
+      }
    }
 
 }
