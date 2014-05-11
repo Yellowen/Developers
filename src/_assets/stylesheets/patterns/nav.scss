@@ -113,24 +113,22 @@ header.navigation {
       }
    }
 
-   .sign-up {
+   .nav-button {
       @include media ($large-screen) {
          @include position(absolute, 0px 0px 0 0);
          padding-right: 1em;
 
          a {
             @include transition (all 0.2s ease-in-out);
-            background: $navigation-nav-button-background;
+            //background: $navigation-nav-button-background;
             border-radius: $base-border-radius;
-            color: white;
+            color: $navigation-color;
             font-size: .8em;
             font-weight: 800;
-            padding: .6em 1em;
+            padding: 0.5em 1em;
+            //margin-top: .5em;
             text-transform: uppercase;
-
-            &:hover {
-               background: lighten($navigation-nav-button-background, 10);
-            }
+            display: block;
          }
       }
    }
