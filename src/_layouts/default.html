@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     {% stylesheet application %}
     {% javascript application %}
@@ -38,7 +39,49 @@
     <section class="step bg-very-light-gray">
       <article>
         <div>
-          <h2>Latest news and activities</h2>
+          <h2>News</h2>
+
+          <div class="activity">
+
+            {{ content }}
+            <div class="activity-text">
+              <h4>Some commit</h4>
+              <p>sdf sdfsdf sdfsd fsdfs df</p>
+            </div>
+
+          </div>
+          <div class="activity">
+            <div class="avatar">
+              <img src="{{ 'lxsameer@gnu.org' | to_gravatar }}" alt="lxsameer's avatar" />
+            </div>
+            <div class="activity-text">
+              <h4>Some commit</h4>
+              <p>sdf sdfsdf sdfsd fsdfs df</p>
+            </div>
+
+          </div>
+          <div class="activity">
+            <div class="avatar">
+              <img src="{{ 'lxsameer@gnu.org' | to_gravatar }}" alt="lxsameer's avatar" />
+            </div>
+            <div class="activity-text">
+              <h4>Some commit</h4>
+              <p>sdf sdfsdf sdfsd fsdfs df</p>
+            </div>
+
+          </div>
+
+        </div>
+      </article>
+    </section>
+
+
+
+
+    <section class="step bg-almost-white">
+      <article>
+        <div>
+          <h2>Activities</h2>
 
           <div class="activity">
             <div class="avatar">
@@ -74,9 +117,6 @@
         </div>
       </article>
     </section>
-
-
-
 
 
 
@@ -153,14 +193,6 @@
       </article>
     </section>
 
-
-    <section class="step center bg-green">
-      <article>
-        <div>
-          {{ content }}
-        </div>
-      </article>
-    </section>
 
 
     {% include footer.html %}

@@ -2,6 +2,9 @@
 @import "lib/bourbon/bourbon";
 @import "lib/neat/neat";
 
+.row {
+   @include row();
+}
 section.step {
 
    @include pad(60px 0 60px 0);

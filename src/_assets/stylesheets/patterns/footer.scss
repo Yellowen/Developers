@@ -8,18 +8,28 @@
    padding: $base-line-height*2 $gutter;
    width: 100%;
    color: white;
+   @include pad(10em default);
 
    .logo {
       @include span-columns(6);
-
+      text-align: right;
+      @include pad(default 1em);
+      border-right: 1px solid gray;
+      h1 {
+         padding-right: 0.4em;
+      }
    }
 
    .social {
       @include span-columns(6);
       .vertical-menu {
          list-sytle: none;
+         width: 100%;
+         padding-top: 0.8em;
+
          li {
             display: inline;
+            @include pad(0.4em 0.8em);
          }
 
       }
@@ -81,5 +91,16 @@
       margin: auto;
       max-width: 35em;
       text-align: center;
+   }
+}
+
+.copyright {
+   @include pad(5em default);
+   h3 {
+      font-size: 0.85em;
+      font-weight: 700;
+   }
+   p {
+      font-size: 0.6em;
    }
 }
