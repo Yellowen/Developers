@@ -10,3 +10,10 @@ assets:
   css_compressor: sass
   cache: true
   gzip: [ text/css, application/javascript ]
+
+
+projects:
+  faalis:
+    title: Faalis
+    icon: faalis.png
+    short_desc: something
