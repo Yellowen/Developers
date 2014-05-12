@@ -10,20 +10,3 @@ assets:
   css_compressor: sass
   cache: true
   gzip: [ text/css, application/javascript ]
-
-projects:
-  faalis:
-    name: Faalis
-    github: http://github.com/Yellowen/Faalis
-    license: GPL v2
-    language: ruby
-    short_description: A ruby on rails engine which provides a very basic web application to use with other ruby on rails applications
-    long_description: sad
-
-  susanoo:
-    name: Susanoo
-    github: http://github.com/Yellowen/Faalis
-    license: GPL v2
-    language: ruby
-    short_description: A ruby on rails engine which provides a very basic web application to use with other ruby on rails applications
-    long_description: sad

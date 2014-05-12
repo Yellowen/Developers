@@ -2,6 +2,7 @@ module Jekyll
 
   class ProjectPage < Page
     def initialize(site, base, dir, project)
+      #super(site, base, dir, 'index.html')
       @site = site
       @base = base
       @dir = dir
@@ -9,9 +10,9 @@ module Jekyll
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'project_index.html')
-      self.data['project'] = project
 
-      self.data['title'] = "#{project["name"]}ssss"
+      self.data['project'] = project
+      self.data['title'] = "#{project["name"]}"
     end
   end
 
@@ -19,10 +20,11 @@ module Jekyll
     def generate(site)
       if site.layouts.key? 'project_index'
         dir = site.config['projects_dir'] || 'projects'
-        site.config['projects'].keys.each do |project|
+        site.config['projects'].each do |project|
           site.pages << ProjectPage.new(site, site.source, File.join(dir, project), site.config['projects'][project])
         end
       end
     end
   end
+
 end
