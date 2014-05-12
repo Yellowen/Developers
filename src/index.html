@@ -9,7 +9,14 @@ title: Yellowen Developers
   <article>
     <div>
       <h2>We love Free Software</h2>
-      <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id nisi erat. Vivamus non purus neque. Donec sit amet fermentum nunc. In hac habitasse platea dictumst. Nulla vulputate auctor velit, eu pulvinar ipsum molestie eu. Nulla sed tincidunt est. Nullam mattis diam sit amet nibh euismod, id venenatis magna pulvinar. Quisque volutpat lacus velit, ultricies vehicula nisi vestibulum ut. Nunc vehicula lobortis vestibulum. Aliquam commodo eros ultricies nisi imperdiet, ac aliquet velit ullamcorper. Vivamus at accumsan magna. Phasellus nec purus tellus. Maecenas hendrerit dolor lorem, vel malesuada erat malesuada non. Mauris eros quam, lacinia eget risus eget, volutpat pharetra enim. Praesent aliquam et nulla non gravida.</p>
+      <p class="paragraph">
+        "One mind may makes mistakes but millions never."<br />
+        There are lots of great <b>Free Software</b> communities around the world, millions of
+        brilliant minds who develop <b>Free Software</b>. How can we don't trust these large
+        and active communities ?<br>
+
+      </p>
+
 
     </div>
 
@@ -93,6 +100,9 @@ title: Yellowen Developers
 <section class="step center project">
   <article>
     <div>
+      {% for project in site.projects %}
+      {{ project.name }}sdadasd
+      {% endfor %}
       <div class="bullets">
         <div class="bullet three-col-bullet">
           <div class="bullet-icon bullet-icon-1">
